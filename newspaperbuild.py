@@ -35,7 +35,7 @@ df = pd.DataFrame({'title':[],'content':[],'summary':[],'link':[],'published':[]
 
 #POOLING
 
-kolamikan = [antara,jawapos,mediaindo,suara,liputan,republika,cnnindo,cnbcindo,kumparan,ngopibareng,detik,kompas,tirto]
+kolamikan = [antara,jawapos,mediaindo,suara,liputan,republika,cnnindo,cnbcindo,kompas]
 news_pool.set(kolamikan, threads_per_source=3)
 news_pool.join()
 
