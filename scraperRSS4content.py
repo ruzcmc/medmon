@@ -3,6 +3,7 @@ import feedparser
 import re
 import datetime
 from time import mktime
+from tqdm import tqdm
 #from newspaper import Article as art
 
 def cleanhtml(raw_html):
@@ -22,7 +23,7 @@ df = pd.DataFrame({'title':[],'content':[],'summary':[],'link':[],'published':[]
 
 for u in feed:
     source = u.feed.title
-    for i in u.entries:
+    for i in tqdm(u.entries):
         conclean = i.content[0].value
         conclean = cleanhtml(conclean)
         #conclean = conclean[13:]
@@ -36,6 +37,6 @@ for u in feed:
 now = datetime.datetime.now()
 file = now.strftime("%d%m%Y")
 
-name = "rss"+file+".csv"
+name = "arss"+file+".csv"
 
 df.to_csv(name)
