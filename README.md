@@ -1,5 +1,4 @@
 # Demmonitrix
-## Overview
 A media monitoring research project. Topped with various automated text analysis pipelines, iced with beautiful dashboard. 
 
 ### Development Plan
