@@ -17,7 +17,10 @@ Before usage, you may want to
 pip install -r requirements.txt
 ```
 first inside your desired environment. (note: if you use Linux, pywin might cause pip to stop, remove accordingly).
-To run daily, insert it to your cron. Don't forget to change the permissions and create the db first.
+To run, simply invoke
+```python scraperSQL.py```
+inside your environment. Make sure that you already have mysql set up properly.
+To run daily, insert it to your crontab. Don't forget to change the permissions and create the db first.
 
 ## Disclaimer
 This is a research project. You are free to use any of the code for non commercial purposes. Research articles concerning this project will be released accordingly, please cite if you decide to use this project.
