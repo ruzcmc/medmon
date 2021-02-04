@@ -18,7 +18,9 @@ pip install -r requirements.txt
 ```
 first inside your desired environment. (note: if you use Linux, pywin might cause pip to stop, remove accordingly).
 To run, simply invoke
-```python scraperSQL.py```
+```
+python scraperSQL.py
+```
 inside your environment. Make sure that you already have mysql set up properly.
 To run daily, insert it to your crontab. Don't forget to change the permissions and create the db first.
 
