@@ -72,7 +72,7 @@ for u in feedi:
 
 #sql connector
 tableName = "beritaonline"
-sqlEngine = create_engine('mysql+pymysql://ruzza:asuraimu123@127.0.0.1/medmon', pool_recycle=3600)
+sqlEngine = create_engine('mysql+pymysql://user:pass@127.0.0.1/medmon', pool_recycle=3600)
 dbConnection = sqlEngine.connect()
 try:
 	df.reset_index(drop=True, inplace=True)
